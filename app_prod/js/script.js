@@ -20,12 +20,27 @@ $('input,textarea').on('focusout', function(){
 	
 });
 
+/*---Verify if exist value---*/
+$('input').each(function(){
+	if($(this).is('[value]')){
+		var value = $(this).val();
+		if(value.length>0){
+			$(this).siblings('span.i-placeholder').hide();
+		}
+	}
+});
+
+$('textarea').each(function(){
+	if($(this).text().length>0){
+		$(this).siblings('span.i-placeholder').hide();
+	}
+});
 
 
 /*-------Ui slide--------*/
 $(function(){
 	$('#slider').slider({
-		value: 50,
+		value: 80,
 		orientation: "horizontal",
 		range: "min",
 		animate: true
@@ -81,10 +96,20 @@ $('body').find('select.i-slt').each(function(){
 
 
 
-	/*------*/
+	/*---Composition slt select---*/
 	select.after('<span class="'+idSlt+'_view slt_view" id="'+idSlt+'"><span class="'+idSlt+'_display slt_display"></span><ul class="'+idSlt+'_list slt_list">'+Newlist+'</ul></span>');
 	var display = select.find('span.'+idSlt+'_display');
 	select.hide();
+});
+
+/*---Control if selected---*/
+$('select.i-slt').find('option').each(function(){
+	if($(this).is('[selected]')){
+		var content = $(this).text();
+		$(this).closest('select').siblings('.slt_view').find('.slt_display').text(content);
+		$(this).closest('select').siblings('span.i-placeholder').hide();
+	}
+	
 });
 
 

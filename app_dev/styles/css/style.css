@@ -23,12 +23,23 @@
     src: local('RobotoLight'), url(fonts/Roboto/Robotothin.ttf);
 }
 
-* {
+*,
+::after,
+::before {
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 14px;
     position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: #1c1c1c;
     outline: none;
+    outline: none;
+}
+
+body {
+    line-height: 1.5;
 }
 
 ul,
@@ -36,6 +47,23 @@ ol {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
 }
 
 h1,
@@ -93,6 +121,10 @@ textarea {
     background-color: #fff;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+
+button {
+    line-height: inherit;
 }
 
 .i-placeholder {
