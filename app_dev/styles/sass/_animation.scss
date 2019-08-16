@@ -1,0 +1,74 @@
+[class*="a__"]{opacity: 0;transition: all .35s cubic-bezier(0,.7,0,.2);}
+
+
+/*--------Animation top-----------*/
+[class*="a__top"]{transform: translateY(-80px);}
+[class*="a__top"].js-on{opacity: 1;transform: translateY(0px);}
+.a__top_1.js-on{transition-delay: .1s}
+.a__top_2.js-on{transition-delay: .2s;}
+.a__top_3.js-on{transition-delay: .3s;}
+.a__top_4.js-on{transition-delay: .4s;}
+.a__top_5.js-on{transition-delay: .5s;}
+.a__top_6.js-on{transition-delay: .6s;}
+.a__top_7.js-on{transition-delay: .7s;}
+.a__top_8.js-on{transition-delay: .8s;}
+.a__top_9.js-on{transition-delay: .9s;}
+.a__top_10.js-on{transition-delay: .10s;}
+
+
+/*--------Animation top-----------*/
+[class*="a__bottom"]{transform: translateY(80px);}
+[class*="a__bottom"].js-on{opacity: 1;transform: translateY(0px);}
+.a__bottom_1.js-on{transition-delay: .1s}
+.a__bottom_2.js-on{transition-delay: .2s;}
+.a__bottom_3.js-on{transition-delay: .3s;}
+.a__bottom_4.js-on{transition-delay: .4s;}
+.a__bottom_5.js-on{transition-delay: .5s;}
+.a__bottom_6.js-on{transition-delay: .6s;}
+.a__bottom_7.js-on{transition-delay: .7s;}
+.a__bottom_8.js-on{transition-delay: .8s;}
+.a__bottom_9.js-on{transition-delay: .9s;}
+.a__bottom_10.js-on{transition-delay: .10s;}
+
+/*--------Animation left-----------*/
+[class*="a__left"]{transform: translateX(-80px);}
+[class*="a__left"].js-on{opacity: 1;transform: translateX(0px);}
+.a__left_1.js-on{transition-delay: .1s}
+.a__left_2.js-on{transition-delay: .2s;}
+.a__left_3.js-on{transition-delay: .3s;}
+.a__left_4.js-on{transition-delay: .4s;}
+.a__left_5.js-on{transition-delay: .5s;}
+.a__left_6.js-on{transition-delay: .6s;}
+.a__left_7.js-on{transition-delay: .7s;}
+.a__left_8.js-on{transition-delay: .8s;}
+.a__left_9.js-on{transition-delay: .9s;}
+.a__left_10.js-on{transition-delay: .10s;}
+
+/*--------Animation right-----------*/
+[class*="a__right"]{transform: translateX(80px);}
+[class*="a__right"].js-on{opacity: 1;transform: translateX(0px);}
+.a__right_1.js-on{transition-delay: .1s}
+.a__right_2.js-on{transition-delay: .2s;}
+.a__right_3.js-on{transition-delay: .3s;}
+.a__right_4.js-on{transition-delay: .4s;}
+.a__right_5.js-on{transition-delay: .5s;}
+.a__right_6.js-on{transition-delay: .6s;}
+.a__right_7.js-on{transition-delay: .7s;}
+.a__right_8.js-on{transition-delay: .8s;}
+.a__right_9.js-on{transition-delay: .9s;}
+.a__right_10.js-on{transition-delay: .10s;}
+
+
+/*--------Animation scale-----------*/
+[class*="a__scale"]{transform: scale(0);}
+[class*="a__scale"].js-on{opacity: 1;transform: scale(1);}
+.a__scale_1.js-on{transition-delay: .1s}
+.a__scale_2.js-on{transition-delay: .2s;}
+.a__scale_3.js-on{transition-delay: .3s;}
+.a__scale_4.js-on{transition-delay: .4s;}
+.a__scale_5.js-on{transition-delay: .5s;}
+.a__scale_6.js-on{transition-delay: .6s;}
+.a__scale_7.js-on{transition-delay: .7s;}
+.a__scale_8.js-on{transition-delay: .8s;}
+.a__scale_9.js-on{transition-delay: .9s;}
+.a__scale_10.js-on{transition-delay: .10s;}

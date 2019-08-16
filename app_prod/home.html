@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <!--====Jquery====-->
+    <script src="../librairies/jquery/jquery.3.4.1.min.js"></script>
+    <!--====JqueryUI JS ====-->
+    <script src="../librairies/jqueryUI/jquery-ui.min.js"></script>
+    <!--====Bootstrap Css====-->
+    <link href="../librairies/bootstrap-4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--====jqueryUI css======-->
+    <link href="../librairies/jqueryUI/jquery-ui.min.css" rel="stylesheet">
+    <!--====Main Css====-->
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="i-container">
+            <div class="menu"><a class="menuBtn" href="#"><span></span></a>
+                <ul class="menu-list">
+                    <li><a class="active" href="#">Личная информация </a></li>
+                    <li><a href="#">Опыт</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">О себе</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="face">
+                <div class="i-container">
+                    <h1 class="a__scale_1">Анкета</h1>
+                </div>
+            </div>
+            <div class="identity i-block">
+                <div class="i-container">
+                    <h2 class="a__left_3">Личная информация</h2>
+                    <div class="identity-content">
+                        <div class="i-form-row"><span class="i-placeholder">ФИО</span><input type="text"></div>
+                        <div class="i-form-row"><span class="i-placeholder">Год рождения</span><select class="i-slt">
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1992">1991</option>
+                                <option value="1992">1990</option>
+                            </select></div>
+                        <div class="i-form-row"><span class="i-placeholder">Место проживания</span><input type="text"></div>
+                        <div class="i-form-row"><span class="i-placeholder">Skype</span><input type="text"></div>
+                        <div class="i-form-row"><span class="i-placeholder">E-mail</span><input type="email"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience i-block">
+                <div class="i-container">
+                    <h2 class="a__left_1">Расскажите о своем опыте</h2>
+                    <div class="experience-content">
+                        <ul class="experience-list">
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item1"><label for="item1">БЭМ/OOCSS</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item4"><label for="item4">Верстаю семантично</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item7"><label for="item7">Webpack</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item2"><label for="item2">Stylus/LESS/SASS</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item5"><label for="item5">ES2015/ES2016</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item8"><label for="item8">jQuery</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item3"><label for="item3">Работаю с SVG</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item6"><label for="item6">Gulp/GRUNT</label></div>
+                            </li>
+                            <li>
+                                <div class="i-form-row"><input type="checkbox" id="item9"><label for="item9">Ипользую Git</label></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="js i-block">
+                <div class="i-container">
+                    <h2 class="a__left_1">Уровень владения JavaScript</h2>
+                    <div class="js-content">
+                        <div class="js-content-slide">
+                            <div id="slider"></div>
+                        </div>
+                        <ul class="level">
+                            <li class="leval_0"><span>Не владею</span></li>
+                            <li class="leval_1"><span>Использую готовые решения</span></li>
+                            <li class="leval_2"><span>Использую готовые решения и умею и переделывать</span></li>
+                            <li class="leval_3"><span>Пишу сложный JS с нуля</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about i-block">
+                <div class="i-container">
+                    <h2 class="a__left_1"> Расскажите о себе</h2>
+                    <div class="h2-sub_title">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+                    <div class="about-content">
+                        <div class="i-form-row"><span class="i-placeholder align_left pd20 ft20">Понравилась тем, что...</span><textarea></textarea></div>
+                        <div class="b-form_btn center"> <button>Готово</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer"></footer>
+    <!--====script Js====-->
+    <script src="js/script.js" language="JavaScript" type="text/javascript"></script>
+</body>
+
+</html>

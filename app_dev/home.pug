@@ -1,0 +1,138 @@
+extends layout/base.pug
+block title
+	title Accueil
+block body
+	body 
+		block header
+			header.header
+				.i-container
+					.menu
+						a(href="#", class="menuBtn")
+							span
+						ul.menu-list
+							li: a(href="#", class="active") Личная информация 
+							li: a(href="#") Опыт
+							li: a(href="#") JavaScript
+							li: a(href="#") О себе
+					
+		block main
+			main
+				form
+					.face
+						.i-container
+							h1.a__scale_1 Анкета
+
+
+					.identity.i-block
+						.i-container
+							h2.a__left_3 Личная информация
+							.identity-content
+								.i-form-row
+									span.i-placeholder ФИО
+									input(type="text")
+								.i-form-row
+									span.i-placeholder Год рождения
+									select.i-slt
+										option(value="1998") 1998
+										option(value="1997") 1997
+										option(value="1996") 1996
+										option(value="1995") 1995
+										option(value="1994") 1994
+										option(value="1993") 1993
+										option(value="1992") 1992
+										option(value="1992") 1991
+										option(value="1992") 1990
+								.i-form-row
+									span.i-placeholder Место проживания
+									input(type="text")
+								.i-form-row
+									span.i-placeholder Skype
+									input(type="text")
+								.i-form-row
+									span.i-placeholder E-mail
+									input(type="email")
+
+
+					.experience.i-block
+						.i-container
+							h2.a__left_1 Расскажите о своем опыте
+							.experience-content
+								ul.experience-list
+									li
+										.i-form-row
+											input(type="checkbox", id="item1")
+											label(for="item1") БЭМ/OOCSS
+									li
+										.i-form-row
+											input(type="checkbox", id="item4")
+											label(for="item4") Верстаю семантично
+									li
+										.i-form-row
+											input(type="checkbox", id="item7")
+											label(for="item7") Webpack
+
+									li
+										.i-form-row
+											input(type="checkbox", id="item2")
+											label(for="item2") Stylus/LESS/SASS
+									
+									li
+										.i-form-row
+											input(type="checkbox", id="item5")
+											label(for="item5") ES2015/ES2016
+									li
+										.i-form-row
+											input(type="checkbox", id="item8")
+											label(for="item8") jQuery
+									li
+										.i-form-row
+											input(type="checkbox", id="item3")
+											label(for="item3") Работаю с SVG
+
+									li
+										.i-form-row
+											input(type="checkbox", id="item6")
+											label(for="item6") Gulp/GRUNT
+									
+									li
+										.i-form-row
+											input(type="checkbox", id="item9")
+											label(for="item9") Ипользую Git
+
+
+					.js.i-block
+						.i-container
+							h2.a__left_1 Уровень владения JavaScript
+							.js-content
+								.js-content-slide
+									#slider
+								ul.level
+									li.leval_0: span Не владею
+									li.leval_1: span Использую готовые решения
+									li.leval_2: span Использую готовые решения и умею и переделывать
+									li.leval_3: span Пишу сложный JS с нуля
+
+
+					.about.i-block
+						.i-container
+							h2.a__left_1  Расскажите о себе
+							.h2-sub_title Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+							.about-content
+								.i-form-row
+									span.i-placeholder.align_left.pd20.ft20 Понравилась тем, что...
+									textarea
+								.b-form_btn.center 
+									button Готово
+
+
+
+
+		block footer
+			footer.footer
+
+    
+	                                                            
+		//====script Js====
+		script(src='js/script.js',  language='JavaScript', type='text/javascript')
+block content
+	

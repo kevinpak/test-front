@@ -1,0 +1,162 @@
+.face{
+	min-height:230px;
+	background-color:#fff;
+	background-image: url('../images/face_bg.png');
+	background-size:cover;
+	background-position: center top;
+	padding: 113px 5px 20px;
+
+	h1{
+		text-align:center;
+	}
+}
+
+
+
+
+.identity{
+	min-height:230px;
+
+	&-content{
+		max-width:520px;
+		margin:0 auto 15px;
+	}
+}
+
+
+.experience{
+	padding-bottom: 96px;
+	&.i-block:before{
+		    background-position: 0 -64px;
+	}
+	&-list{
+		display:flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		li{
+			.i-form-row{
+				display:block;
+				width:210px;
+				margin-bottom: 11px;			
+			}
+			
+		}
+	}
+	
+}
+
+
+.js{
+	padding-bottom:80px;
+	&.i-block:before{
+		background-position: 0 -128px;
+	}
+	
+	&-content{
+		padding-top:46px;
+		&-slide{
+			z-index: 9;
+		}
+
+		.level{
+			width:100%;
+
+			li{
+				position:absolute;
+				max-width:170px;
+				bottom: 28px;
+				font-family: 'Roboto-Regular', sans-serif;
+
+
+				&:before{
+					content:"";
+					position:absolute;
+					width:1px;
+					height:19px;
+					left:0;
+					bottom:-26px;
+					background-image: url('../images/marque_level.png');
+					background-position:center bottom;
+					background-repeat:no-repeat;
+					z-index: 8;
+				}
+				&:after{
+					content:"";
+					position:absolute;
+					width:1px;
+					height:0px;
+					left:0;
+					bottom:-28px;
+					background-color:#fff;
+					z-index: 10;
+				}
+
+				span{
+				  font-size: 13px;
+				  color:#2e211c;
+   				line-height: 19px;
+					display: table-cell;
+					height: 50px;
+					vertical-align: bottom;
+				}
+
+				&.leval_0{
+					left:0;
+						&:after{
+						height:2px;
+						background-color:#ccb1f1;
+					}
+				}
+				
+
+				&.leval_1{
+					left:25%;
+
+					&:after{
+						height:7px;
+					}
+				}
+
+				&.leval_2{
+					left:50%;
+					max-width:180px;
+
+					&:after{
+						height:10px;
+					}
+				}
+
+				&.leval_3{
+					right:0;
+
+					&:before{
+						left: initial;
+						right: 0;
+					}
+					&:after{
+						height:15px;
+						background-color:#e8e8e8;
+						left: initial;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.about
+{
+	&.i-block:before{
+		background-position: 0 -192px;
+	}
+	h2{
+		margin-bottom: 10px;
+	}
+	&-content{
+		max-width:520px;
+		margin: 0 auto 50px;
+	}
+}
